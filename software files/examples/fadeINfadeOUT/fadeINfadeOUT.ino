@@ -6,7 +6,7 @@
 #define NUM_LEDS   12
 
 T3A33BRG strip(DATA_PIN, CLOCK_PIN);
-uint8_t hueOffset = 0;  // 0…255 arası dönen kaydırma değeri
+uint8_t hueOffset = 0;
 
 void startFrame() {
   strip.send32Bit(0, 0, 0, 0, 0);
